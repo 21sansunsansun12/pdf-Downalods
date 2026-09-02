@@ -6,8 +6,24 @@
   <body>
 
     <h1>My PDF Library</h1>
-    <h2>Python Cheat Sheet</h2>
-    <p>A useful Python cheat sheet for beginners.</p>
-    <a href="python_cheatsheet.pdf">Download Full PDF </a>
+<div id="adStep">
+  <p> Continue to download</p>
+
+  <a href="https://omg10.com/4/11710331" target="_blank" onclick="showDownload()">
+    <button>Continue</button>
+  </a>
+</div>
+
+  <div id="downloadStep" style="display:none'">
+    <p>Your PDF is ready!</p>
+
+    <a href="python_cheatsheet.pdf"><button>Download PDF</button></a>
+  </div>
+  <script>
+    function showDownload() {
+      document.getElementById('adStep').style.display = "none";
+      document.getElementById("downloadStep").style.display = "block";
+    }
+  </script>
   </body>
 </html>
